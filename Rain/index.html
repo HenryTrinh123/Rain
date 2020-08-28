@@ -257,7 +257,7 @@
 						wid = myGameArea.canvas.width;
 						raindrop.push(new component(50, 50, dropColor, Math.random() * wid, -20, "oval"));
 					}
-					for(i=0; i<droplets.length; i++) {
+					for(i=0; i<raindrop.length; i++) {
 						raindrop[i].speedY += raindrop[i].gravity;
 						raindrop[i].y += raindrop[i].speedY;
 						if(raindrop[i].past()) {
