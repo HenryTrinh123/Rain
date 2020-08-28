@@ -1,0 +1,110 @@
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+canvas {
+	border: none;
+	background-color: #f1f1f1;
+	z-index: 1;
+}
+
+button {
+	width: 100px;
+	height: 30px;
+	background-color: gray;
+	font-family: 'Manrope', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 10px;
+	outline: none;
+	border: 3px solid black;
+	display: none;
+	transition: all 0.3s;
+}
+
+button:hover {
+	background-color: rgb(155, 216, 65);
+	cursor: pointer;
+    transform: scale(1.1);
+}
+
+#end-message {
+	text-align: center;
+	z-index: 100;
+	padding-top: 10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 80px;
+	display: none;
+}
+
+#gameover {
+	font-size: 100px;
+	font-family: 'Manrope', sans-serif;
+	color: red;
+	transition: all 0.3s;
+	font-weight: bold;
+}
+
+#gameover:hover {
+	font-size: 110px;
+}
+
+#highscore {
+	color: #2fbeed;
+	transition: all 0.3s;
+}
+
+#highscore:hover {
+	font-size: 90px;
+}
+
+#score {
+	font-size: 35px;
+	position: absolute;
+	left: 10px;
+	top: -30px;
+	font-family: 'Manrope', sans-serif;
+}
+
+#leaderboard {
+	width: 30vw;
+	min-width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow: auto;
+	margin: 20px 0px;
+	font-size: 40px;
+	padding: 20px;
+	padding-top: 100px;
+	display: flex;
+    	justify-content: space-around;
+    	flex-direction: row;
+    	align-items: center;
+    	transition: all 0.3s;
+}
+
+#leaderboard:hover {
+	transform: scale(1.05);
+}
+
+#leaderboard-place {
+	width: 3vw;
+	min-width: 30px;
+}
+
+.enlarge {
+	transition: all 0.3s;
+}
+
+.enlarge:hover {
+	transform: scale(1.1);
+}
